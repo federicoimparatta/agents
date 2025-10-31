@@ -59,6 +59,7 @@ contains-studio-agents/
 │   ├── tiktok-strategist.md
 │   └── twitter-engager.md
 ├── product/
+│   ├── devil-advocate.md
 │   ├── feedback-synthesizer.md
 │   ├── sprint-prioritizer.md
 │   └── trend-researcher.md
@@ -95,6 +96,7 @@ contains-studio-agents/
 - **test-writer-fixer** - Write tests that catch real bugs
 
 ### Product Department (`product/`)
+- **devil-advocate** - Challenge assumptions and find failure modes
 - **feedback-synthesizer** - Transform complaints into features
 - **sprint-prioritizer** - Ship maximum value in 6 days
 - **trend-researcher** - Identify viral opportunities
