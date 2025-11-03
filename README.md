@@ -20,7 +20,8 @@ pods/agency/
 ├── strategy-partner.md
 ├── design-partner.md
 ├── technology-partner.md
-└── operations-partner.md
+├── operations-partner.md
+└── devil-advocate.md
 ```
 
 | Agent | What they cover |
@@ -29,10 +30,12 @@ pods/agency/
 | `design-partner` | Experience definition, rapid validation, design-to-build alignment |
 | `technology-partner` | Architecture, delivery sequencing, quality safeguards |
 | `operations-partner` | Planning, communication rhythm, launch & measurement follow-through |
+| `devil-advocate` | Assumption stress-testing, risk surfacing, edge-case discovery |
 
 Start with the **strategy-partner** to shape the engagement, then bring in the
-other partners as the work progresses. Every file includes detailed prompts and
-operating principles tailored to that craft.
+other partners as the work progresses. Invite the **devil-advocate** whenever
+you need sharper critique on risks and assumptions. Every file includes detailed
+prompts and operating principles tailored to that craft.
 
 ## 📘 Agency Handbook
 
