@@ -1,48 +1,51 @@
-# Contains Studio Feature Pod Agents
+# Contains Studio AI Agency
 
-A lean, Sidetool-inspired roster of AI agents designed to operate as a Marty Cagan-style, cross-functional product squad. Instead of dozens of departmental specialists, this repo now centers on a single, high-leverage feature pod that can take a request from problem framing through launch and measurement in six-day sprints.
+A compact roster of AI agents built for a modern product agency. Each agent
+covers a distinct craft area—strategy, design, technology, and operations—so you
+get end-to-end support without juggling a crowded bench or outdated sprint
+rituals.
 
-## 🚀 Why a Feature Pod?
+## 🌐 Why this structure?
 
-Traditional departmental agents created heavy handoffs and diluted accountability. The new structure:
+- **One agent per area** keeps the lineup memorable and easy to orchestrate.
+- **Outcome-first workflows** replace rigid sprint schedules with client-ready
+  phases that flex to the engagement.
+- **Lightweight documentation** means you spend time solving problems, not
+  maintaining process theatre.
 
-- **Empowers outcomes** – one pod owns discovery, delivery, and commercial impact end-to-end.
-- **Stays lightweight** – five core agents plus an orchestrator cover the full product trio + business + delivery loop.
-- **Moves fast** – rituals, templates, and tooling keep focus on the smallest lovable solution each sprint.
-
-This repository now focuses exclusively on that pod so you can spin up a compact agency without wading through legacy rosters.
-
-## 🧠 Core Feature Pod
+## 🧠 Core Agency Agents
 
 ```
-pods/core-feature-team/
-├── business-partner.md
-├── delivery-partner.md
-├── feature-pod-orchestrator.md
-├── product-designer.md
-├── product-strategist.md
-└── tech-lead.md
+pods/agency/
+├── strategy-partner.md
+├── design-partner.md
+├── technology-partner.md
+├── operations-partner.md
+└── devil-advocate.md
 ```
 
-| Agent | What they own |
+| Agent | What they cover |
 | --- | --- |
-| `feature-pod-orchestrator` | Spins up the squad, manages rituals, keeps context flowing |
-| `product-strategist` | Frames opportunities, defines outcomes, and leads discovery synthesis |
-| `product-designer` | Translates insights into lovable experiences and validates solutions |
-| `tech-lead` | Shapes feasibility, guides implementation, and safeguards quality |
-| `delivery-partner` | Orchestrates flow, sequencing, and continuous improvement |
-| `business-partner` | Ensures commercial viability, go-to-market alignment, and metric rigor |
+| `strategy-partner` | Opportunity framing, commercial viability, stakeholder narrative |
+| `design-partner` | Experience definition, rapid validation, design-to-build alignment |
+| `technology-partner` | Architecture, delivery sequencing, quality safeguards |
+| `operations-partner` | Planning, communication rhythm, launch & measurement follow-through |
+| `devil-advocate` | Assumption busting, risk surfacing, edge case discovery |
 
-Start every engagement with the **feature-pod-orchestrator**. It will pull in the other agents as needed and reference the shared playbook.
+Start with the **strategy-partner** to shape the engagement, then bring in the
+other partners as the work progresses. Every file includes detailed prompts and
+operating principles tailored to that craft.
 
-## 📘 Feature Pod Playbook
+## 📘 Agency Handbook
 
-The shared workflow, rituals, and checklists live in [`docs/feature-pod-playbook.md`](docs/feature-pod-playbook.md). It covers:
+Shared ways of working, phase checklists, and artifact templates live in
+[`docs/agency-handbook.md`](docs/agency-handbook.md). It replaces sprint-driven
+rituals with a flexible, phase-based approach suited for client engagements.
 
-- Six-day lifecycle from intake ➜ discovery ➜ solution ➜ build ➜ launch ➜ measurement.
-- Role-by-role responsibilities and collaboration cues.
-- Intake, launch, and measurement checklists to keep the squad aligned on outcomes.
-- Artifact templates (intake brief, experiment log, outcome report) for lightweight documentation.
+For a workflow-level view of how the agency pod operates from intake to
+measurement, see the [`docs/feature-pod-playbook.md`](docs/feature-pod-playbook.md).
+It breaks down triggers, handoffs, and deliverables for each phase without
+relying on day-by-day cadences.
 
 ## 📥 Installation
 
@@ -54,20 +57,24 @@ The shared workflow, rituals, and checklists live in [`docs/feature-pod-playbook
    ```bash
    cp -r agents/* ~/.claude/agents/
    ```
-   Or manually copy all the agent files to your `~/.claude/agents/` directory.
+   Or manually copy the agent files to `~/.claude/agents/`.
 3. **Restart Claude Code** to load the new agents.
 
-## 🛠️ How to Use the Pod
+## 🛠️ How to Engage the Agency
 
-1. **Kick off with the orchestrator** – share the feature goal, target user, and success metric. It will fan out tasks to the other agents.
-2. **Stay outcome-focused** – request support from product-strategist, designer, tech-lead, delivery-partner, or business-partner as the sprint progresses.
-3. **Follow the playbook** – use the documented rituals and checklists to keep discovery and delivery tightly coupled.
-4. **Review & iterate** – after launch, let the orchestrator drive the outcome review and feed learnings into the next sprint.
+1. **Brief the strategy-partner** with the client goal, target user, and success
+   signal.
+2. **Invite craft partners as needed**—design for experience, technology for
+   build planning, operations for coordination.
+3. **Follow the handbook phases** to stay aligned on intake, exploration,
+   solution, delivery, and measurement.
+4. **Document insights lightly** so future iterations start with full context.
 
 ## 🤝 Contributing
 
-- Keep new agents lightweight and outcome-oriented.
-- Update the feature pod playbook when you introduce new rituals or improvements.
-- Prefer expanding the existing pod before adding new departments.
+- Keep new agents lean and oriented around distinct craft areas.
+- Update the agency handbook when you introduce better rituals or templates.
+- Optimise for clarity, autonomy, and outcomes over process for process' sake.
 
-Empowered teams ship better products. This repo gives you a compact, AI-native squad that can own the entire feature journey—just add your product idea.
+Build the right thing, communicate clearly, and let these agents keep your AI
+agency sharp.

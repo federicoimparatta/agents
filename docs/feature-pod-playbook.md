@@ -1,110 +1,149 @@
-# Core Feature Pod Playbook
+# Agency Pod Workflow Playbook
 
-This playbook describes how the lean Contains Studio feature pod ships an outcome-focused feature in six-day cycles. The process blends Marty Cagan's empowered team principles with the nimble tooling of Sidetool-sized agencies.
+This playbook explains how the Contains Studio AI agency operates as a lean
+five-agent pod. Instead of marching through rigid day-by-day schedules, the team
+moves through a repeatable workflow that adapts to each engagement's context.
+Every step clarifies who leads, what good output looks like, and when to loop in
+other craft partners.
 
 ## Roles at a Glance
 
-| Role | Focus | Primary Responsibilities |
+| Agent | Focus | Primary Responsibilities |
 | --- | --- | --- |
-| feature-pod-orchestrator | Glue | Intake triage, ritual cadence, artifact hygiene |
-| product-strategist | Value | Frame opportunities, define success metrics, lead discovery synthesis |
-| product-designer | Usability | Translate insights into experiences, validate solutions, steward design system |
-| tech-lead | Feasibility | Shape architecture, guide implementation, ensure quality and observability |
-| delivery-partner | Flow | Sequence work, remove blockers, drive continuous improvement |
-| business-partner | Viability | Validate commercial impact, craft GTM narratives, own business measurement |
+| strategy-partner | Direction | Frame opportunities, define outcomes, narrate decisions |
+| design-partner | Experience | Visualise journeys, validate solutions, steward product feel |
+| technology-partner | Delivery | Shape architecture, manage technical risk, ensure quality |
+| operations-partner | Flow | Orchestrate rhythm, maintain visibility, drive continuous improvement |
+| devil-advocate | Challenge | Stress-test assumptions, expose risks, surface edge cases |
 
-Each role is an autonomous agent you can invoke individually, but they work best when orchestrated as a compact squad.
+Each agent can be invoked independently, yet the pod performs best when
+strategic framing, challenge, experience definition, technical planning, and
+operations coordination progress as a single flow.
 
-## Six-Day Feature Lifecycle
+## Workflow Overview
 
-### Day 0 — Intake & Alignment
-1. **Trigger**: New opportunity arrives via intake form, leadership request, or metrics alert.
-2. **Orchestrator** spins up the pod, prepares a one-page brief (problem, target user, outcome, constraints).
-3. **Product-strategist** confirms the customer problem, target segment, and hypothesis.
-4. **Business-partner** validates commercial stakes and success metrics.
-5. **Delivery-partner** publishes the sprint play (milestones, ownership, decision checkpoints).
+```
+Intake → Insight Loop → Solution Shaping → Build & Integrate → Launch Readiness → Measure & Adapt
+```
 
-### Day 1 — Discovery Sprint
-1. **Product-designer** and **product-strategist** run rapid discovery: interview prep, assumption mapping, data pulls.
-2. **Tech-lead** investigates feasibility, runs spikes for risky integrations, and flags dependencies.
-3. **Business-partner** drafts viability scenarios and launch positioning angles.
-4. Orchestrator tracks decisions, ensuring discovery outputs feed the solution shaping session.
+Every phase has an explicit trigger, a primary owner, and lightweight
+artifacts that keep the rest of the pod informed. Phases can overlap when the
+work benefits from parallel exploration—as long as ownership remains clear.
 
-### Day 2 — Solution Shaping
-1. Pod convenes (async or live) to share insights and align on the smallest lovable solution.
-2. **Product-designer** produces prototype flows aligned to the desired outcome.
-3. **Tech-lead** slices the solution into vertical increments with testing and instrumentation requirements.
-4. **Product-strategist** finalizes success metrics, acceptance criteria, and experiment design.
-5. **Delivery-partner** updates the sprint plan, locks commitments, and surfaces remaining risks.
+**Devil-advocate touchpoints:**
+- Intake & Orientation — sanity-check the brief, surface hidden constraints, and
+  list the riskiest assumptions to validate first.
+- Insight Loop & Solution Shaping — probe edge cases, security/privacy gaps, and
+  competing explanations before commitments harden.
+- Build through Launch — stress-test readiness plans, failure scenarios, and
+  rollback coverage so go/no-go calls are grounded.
+- Measure & Adapt — review what failed or nearly failed to update future risk
+  checklists.
 
-### Days 3–4 — Build & Validate
-1. **Tech-lead** and engineering partners implement the selected slice, pairing with design as needed.
-2. **Delivery-partner** runs daily syncs, keeps WIP limits healthy, and expedites decisions.
-3. **Product-designer** conducts quick usability checks or fake-door tests; feeds insights back to engineering.
-4. **Business-partner** prepares GTM collateral, messaging, and measurement dashboards.
-5. Orchestrator monitors progress, adjusts ceremonies, and ensures blockers are escalated.
+## Phase Details
 
-### Day 5 — Launch Prep & Release
-1. **Tech-lead** signs off on quality (tests, observability, rollback).
-2. **Delivery-partner** completes launch checklist (support scripts, documentation, coordination).
-3. **Business-partner** syncs with marketing/sales stakeholders and finalizes enablement.
-4. **Product-strategist** communicates expected impact and risk mitigations to leadership.
-5. Orchestrator triggers launch, captures final state, and schedules measurement cadence.
+### 1. Intake & Orientation
+- **Trigger:** A new brief, opportunity, or escalation reaches the agency.
+- **Lead:** strategy-partner, supported by operations-partner.
+- **Objectives:** Clarify the problem, desired outcome, guardrails, and decision
+  makers. Decide which craft partners are needed immediately.
+- **Key outputs:** Opportunity outline, success measures, constraints log,
+  engagement channel setup, risk/assumption log.
+- **Hand-off signal:** All partners understand the problem statement and have a
+  single source of truth to reference.
 
-### Day 6 — Measurement & Learning
-1. **Product-strategist** and **business-partner** review early metrics, qualitative feedback, and finance data.
-2. **Tech-lead** audits telemetry for stability, performance, and anomalies.
-3. **Product-designer** gathers UX signal (session replays, quick interviews) for iteration planning.
-4. **Delivery-partner** runs retro focused on system improvements and updates the experiment log.
-5. Orchestrator compiles the outcome report: what shipped, what we learned, what we do next.
+### 2. Insight Loop
+- **Trigger:** Problem framing is validated and there are open assumptions to test.
+- **Lead:** strategy-partner and design-partner pair.
+- **Objectives:** Gather qualitative and quantitative insight, map hypotheses,
+  and tag confidence levels.
+- **Key outputs:** Insight digest, opportunity map, evidence tracker, list of
+  decisions awaiting proof, updated risk likelihood/impact notes.
+- **Hand-off signal:** Highest-leverage opportunities are prioritised with
+  supporting evidence or an explicit plan to validate further.
 
-## Decision & Communication Cadence
+### 3. Solution Shaping
+- **Trigger:** Top opportunities and success measures are agreed.
+- **Lead:** design-partner with technology-partner and strategy-partner.
+- **Objectives:** Co-create the recommended experience, sequence delivery
+  slices, and articulate how the solution meets business outcomes.
+- **Key outputs:** Prototype or narrative walkthrough, technical approach,
+  measurement plan, updated decision log, devil-advocate edge-case rundown.
+- **Hand-off signal:** Pod shares a clear solution story and knows what must be
+  built, tested, and communicated.
 
-- **Sprint Brief** (Day 0): Shared doc linking to brief, success metrics, backlog, and rituals.
-- **Daily Update** (Async): Status, blockers, decisions needed, metrics snapshot.
-- **Solution Review** (Day 2): Validate scope, prototypes, and feasibility before heavy build.
-- **Launch Review** (Day 5): Confirm readiness across value, usability, feasibility, and viability.
-- **Outcome Review** (Day 6): Metrics readout plus next steps.
+### 4. Build & Integrate
+- **Trigger:** Solution story approved and slices defined.
+- **Lead:** technology-partner with operations-partner maintaining flow.
+- **Objectives:** Implement the agreed slices, keep work-in-progress healthy,
+  and safeguard quality, security, and observability.
+- **Key outputs:** Working increments, technical runbook, QA checklist, status
+  digest, failure-mode mitigation list.
+- **Hand-off signal:** Increment meets acceptance criteria and is ready for
+  launch rehearsal.
 
-## Checklists
+### 5. Launch Readiness
+- **Trigger:** Increment passes technical validation and user acceptance.
+- **Lead:** operations-partner coordinating all agents.
+- **Objectives:** Confirm go-to-market narrative, enablement, support,
+  analytics, and risk mitigations. Secure stakeholder confidence for launch.
+- **Key outputs:** Launch kit, enablement briefing, monitoring dashboards,
+  support playbook, go/no-go decision record, rollback scenario validation.
+- **Hand-off signal:** Leadership signs off, launch timetable is confirmed, and
+  contingency plans are documented.
 
-### Intake Checklist
-- [ ] Problem statement and target user captured
-- [ ] Desired outcome and guardrail metrics defined
-- [ ] Key constraints (tech, legal, budget) noted
-- [ ] Success horizon agreed (e.g., 14-day activation lift)
-- [ ] Decision-makers and stakeholders identified
+### 6. Measure & Adapt
+- **Trigger:** Outcome data and qualitative feedback begin to arrive post-launch.
+- **Lead:** strategy-partner synthesising input from all agents.
+- **Objectives:** Evaluate performance against success measures, capture
+  learnings, and prioritise follow-up experiments or iterations.
+- **Key outputs:** Outcome report, improvement backlog, updated hypothesis
+  tracker, retro summary, refreshed risk playbook for future cycles.
+- **Reset signal:** Decision made on whether to double-down, iterate, or sunset,
+  which restarts the intake flow as needed.
 
-### Launch Checklist
-- [ ] Acceptance criteria met and demo recorded
-- [ ] Tests, telemetry, and rollback plan signed off by tech-lead
-- [ ] Support and documentation updated
-- [ ] GTM messaging, enablement, and analytics dashboards ready
-- [ ] Post-launch measurement owners confirmed
+## Agent Collaboration Patterns
 
-### Measurement Checklist
-- [ ] Outcome metrics vs. target reviewed
-- [ ] Qualitative feedback synthesized
-- [ ] Financial / viability impact assessed
-- [ ] Follow-up experiments or backlog items captured
-- [ ] Retro actions assigned and tracked
+- **Strategy ↔ Design:** Pair early to ensure insights translate into experience
+  decisions. Share short Loom or FigJam walkthroughs instead of heavy decks.
+- **Design ↔ Technology:** Review prototypes alongside delivery slices so
+  trade-offs are surfaced before build begins.
+- **Technology ↔ Operations:** Maintain a shared implementation board with
+  quality gates and risk flags; automate status snapshots wherever possible.
+- **Operations ↔ Strategy:** Keep the decision log current so new context is
+  reflected in future framing and stakeholder updates.
 
-## Artifacts & Templates
+## Communication & Visibility
 
-- **Intake Brief**: One-page doc linking to research, metrics, and constraints.
-- **Opportunity Solution Tree**: Visual map of problems, opportunities, and experiments.
-- **Experiment Log**: Table of hypotheses, methods, results, and next steps.
-- **Sprint Board**: Kanban board with discovery/delivery swimlanes and WIP limits.
-- **Outcome Report**: Post-launch summary with metrics, insights, decisions.
+- **Kickoff note (Intake):** Links to brief, success measures, and owners.
+- **Insight digests (Insight Loop):** Async updates summarising evidence, open
+  questions, and decisions needed.
+- **Solution reviews (Solution Shaping):** Short sessions or recordings showing
+  prototypes, delivery plan, and measurement approach.
+- **Build pulses (Build & Integrate):** Twice-weekly async updates covering
+  progress, blockers, and release confidence.
+- **Launch rehearsal (Launch Readiness):** Structured walk-through of readiness
+  checklists and rollback plans.
+- **Outcome readout (Measure & Adapt):** Narrative summarising metrics, signal,
+  and proposed next bets.
 
-## Tooling Principles
+## Lightweight Checklists
 
-- Prefer collaborative, asynchronous tools (Notion, Linear, FigJam, Loom) that support quick iteration.
-- Automate status updates where possible (dashboards, alerts) to reduce manual reporting.
-- Keep documentation lightweight but discoverable; link artifacts rather than duplicating content.
+| Phase | Critical Checks |
+| --- | --- |
+| Intake & Orientation | Problem, audience, outcome, and constraints captured. Stakeholders and cadence confirmed. |
+| Insight Loop | Hypotheses tagged with confidence, evidence stored in a shared tracker, open questions logged with owners. |
+| Solution Shaping | Prototype/story approved, delivery slices defined, measurement plan agreed, decision log updated. |
+| Build & Integrate | Acceptance criteria met, QA + monitoring in place, dependencies cleared, deployment plan reviewed. |
+| Launch Readiness | Enablement assets ready, support teams briefed, analytics validated, go/no-go recorded with mitigations. |
+| Measure & Adapt | Metrics analysed, qualitative feedback synthesised, improvement backlog prioritised, next checkpoint scheduled. |
 
 ## Continuous Improvement
 
-After each sprint, the orchestrator and delivery-partner evaluate the pod's velocity, quality, and outcome attainment. Improvements are captured as experiments in the playbook backlog and prioritized alongside product bets. Celebrate wins, document learnings, and keep the squad small, focused, and hungry.
+After each cycle, the operations-partner runs a lightweight retrospective with
+input from every agent. Capture what increased clarity, where delays happened,
+and which tooling tweaks paid off. Update this playbook whenever a new practice
+improves speed, quality, or client confidence.
 
-This playbook evolves with every feature shipped—update it relentlessly.
+Stay lean, stay outcome-focused, and keep the workflow flexible enough to meet
+any engagement with confidence.
